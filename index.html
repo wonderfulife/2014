@@ -2,12 +2,33 @@
 layout: default
 title: Wonderful Life 
 ---
-
-<h2>{{ page.title }}</h2>
-<p> List </p>
-<ul>
-    {% for post in site.posts %}
-        <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ur>
+			<div class="row">
+				<div class="col-md-4 alert alert-success">
+					<h2>Mission</h2>
+					<em class="text-muted">You must choose commitment to your goal over comfort in the moment if you want to change yourself.</em>
+					<ul class="list-unstyled">
+						{% for post in site.tags.mission limit: 5 %}
+							<li class="text-muted">{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+				<div class="col-md-4 alert alert-info" >
+					<h2>Strategy</h2>
+					<em class="text-muted">You must overcome your need for instant gratification and prepare yourself for 'the long haul' of life.</em>
+					<ul class="list-unstyled">
+						{% for post in site.tags.strategy limit: 5 %}							 
+							<li class="text-muted">{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+				<div class="col-md-4 alert alert-warning">
+					<h2>Progress</h2>
+					<em class="text-muted">You cannot achieve greatness or fulfill your true life purpose without suffering.</em>
+					<ul class="list-unstyled">
+						{% for post in site.tags.progress limit: 5 %}
+							<li class="text-muted">{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ post.url }}">{{ post.title }}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>  
 
