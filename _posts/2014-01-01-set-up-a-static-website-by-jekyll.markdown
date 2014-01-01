@@ -6,20 +6,16 @@ categories: jekyll mission
 tags: mission
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
 
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+#### Happy New Year    
+What's your plan for the New Year? For me the keyword of 2014 is `Management` which will mean
+{% highlight perl %}
++ Self-control 	
++ Persevere
++ Accumulation
++ Methodology
++ Efficiency
+...
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+Let us slow down and take one step at a time. Getting this website running to keep track was my first target. I think I did pretty well.

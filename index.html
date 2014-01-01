@@ -8,7 +8,7 @@ title: Wonderful Life
 					<em class="text-muted">You must choose commitment to your goal over comfort in the moment if you want to change yourself.</em>
 					<ul class="list-unstyled">
 						{% for post in site.tags.mission limit: 5 %}
-							<li class="text-muted">{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></li>
+							<li class="text-muted">{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 						{% endfor %}
 					</ul>
 				</div>
@@ -17,7 +17,7 @@ title: Wonderful Life
 					<em class="text-muted">You must overcome your need for instant gratification and prepare yourself for 'the long haul' of life.</em>
 					<ul class="list-unstyled">
 						{% for post in site.tags.strategy limit: 5 %}							 
-							<li class="text-muted">{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></li>
+							<li class="text-muted">{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 						{% endfor %}
 					</ul>
 				</div>
@@ -26,7 +26,7 @@ title: Wonderful Life
 					<em class="text-muted">You cannot achieve greatness or fulfill your true life purpose without suffering.</em>
 					<ul class="list-unstyled">
 						{% for post in site.tags.progress limit: 5 %}
-							<li class="text-muted">{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></li>
+							<li class="text-muted">{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 						{% endfor %}
 					</ul>
 				</div>
