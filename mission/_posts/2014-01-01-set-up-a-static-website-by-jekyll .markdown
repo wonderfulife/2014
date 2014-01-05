@@ -2,8 +2,8 @@
 layout: post
 title:  "Set up a static website by Jekyll"
 date:   2014-01-01 06:07:21
-categories: jekyll mission
-tags: mission
+categories: mission
+tags: mission jekyll
 ---
 
 
