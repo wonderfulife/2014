@@ -2,4 +2,7 @@ name: Suffering 42.195&#176;
 markdown: redcarpet
 pygments: true
 baseurl: "/2014"
+paginate: 10
+
+
 

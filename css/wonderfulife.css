@@ -27,4 +27,12 @@
 	height: 300px;
 }
 
+.container  .listpage{
+    padding: 20px;   
+	border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+	margin-left: -10px;
+	margin-right: 18px;
+}
 
