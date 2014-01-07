@@ -1,0 +1,43 @@
+---
+layout: default
+title: Wonderful Life
+category: progress
+---
+	<div class="alert-warning listpage">
+	<h2>Progress</h2>
+    <ul class="list-unstyled">
+       {% for post in paginator.posts %}
+			<li class="text-muted">
+				{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}	</a>
+			</li>
+		{% endfor %}
+    </ul>
+	
+	{% if paginator.total_pages > 1 %}
+	<div class="pagination">
+	{% if paginator.previous_page %}
+		<a href="{{site.baseurl}}/{{paginator.category}}{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; Prev</a>
+	{% else %}
+		<span>&laquo; Prev</span>
+	{% endif %}
+
+	{% for page in (1..paginator.total_pages) %}
+		{% if page == paginator.page %}
+			<em>{{ page }}</em>
+		{% elsif page == 1 %}
+			<a href="{{site.baseurl}}/{{paginator.category}}{{ '/index.html' | replace: '//', '/' }}">{{ page }}</a>
+		{% else %}
+			<a href="{{site.baseurl}}/{{paginator.category}}{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+		{% endif %}
+	{% endfor %}
+
+	{% if paginator.next_page %}
+		<a href="{{site.baseurl}}/{{paginator.category}}{{ paginator.next_page_path | replace: '//', '/' }}">Next &raquo;</a>
+	{% else %}
+		<span>Next &raquo;</span>
+	{% endif %}
+	</div>
+	{% endif %}
+	</div>
+</div>

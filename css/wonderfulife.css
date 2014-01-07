@@ -1,0 +1,38 @@
+.alert {
+    height: 250px;
+    margin-right: 25px;
+}
+
+.col-md-4 {
+    width: 31%;
+}
+.col-md-6 {
+    width: 49%;
+}
+
+.jumbotron {
+    margin-bottom: 20px;
+    margin-top: 70px;
+	height: 400px;
+}
+
+.jumbotron h1{
+    color: #843534;
+}
+.jumbotron .container{
+	margin-left: -40px;
+}
+.jumbotron img{
+	width: 560px;
+	height: 300px;
+}
+
+.container  .listpage{
+    padding: 20px;   
+	border-radius: 6px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+	margin-left: -10px;
+	margin-right: 18px;
+}
+
