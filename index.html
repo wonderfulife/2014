@@ -1,34 +1,96 @@
----
-layout: default
-title: Wonderful Life 
----
-			<div class="row">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Wonderful Life</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/2014/css/bootstrap.css">
+		<link rel="stylesheet" href="/2014/css/wonderfulife.css">
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/2014/">Wonderfulife</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/2014/mission">Mission</a>
+                        </li>
+                        <li>
+                            <a href="/2014/strategy">Strategy</a>
+                        </li>
+                        <li>
+                            <a href="/2014/progress">Progress</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	    <div class="container theme-showcase">
+			<div class="jumbotron">
+                <div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h1 class="text-danger">Suffering 42.195&#176;</h1> 
+							<em class="text-muted">You cannot change a single thing on this Earth except yourself. And when you do change yourself... it changes everything.</em>
+						</div>
+						<div class="col-md-6">
+							<img src="/2014/img/1.png" alt="A PNG" class="img-rounded">
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="container">
+                			<div class="row">
 				<div class="col-md-4 alert alert-success">
 					<h2>Mission</h2>
 					<em class="text-muted">You must choose commitment to your goal over comfort in the moment if you want to change yourself.</em>
 					<ul class="list-unstyled">
-						{% for post in site.tags.mission limit: 5 %}
-							<li class="text-muted">{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-						{% endfor %}
+						
+							<li class="text-muted">01 Jan 2014&nbsp;&nbsp;&nbsp;&nbsp;<a href="/2014/mission/2014/01/01/set-up-a-static-website-by-jekyll.html">Set up a static website by Jekyll</a></li>
+						
 					</ul>
 				</div>
 				<div class="col-md-4 alert alert-info" >
 					<h2>Strategy</h2>
 					<em class="text-muted">You must overcome your need for instant gratification and prepare yourself for 'the long haul' of life.</em>
 					<ul class="list-unstyled">
-						{% for post in site.tags.strategy limit: 5 %}							 
-							<li class="text-muted">{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-						{% endfor %}
+						
 					</ul>
 				</div>
 				<div class="col-md-4 alert alert-warning">
 					<h2>Progress</h2>
 					<em class="text-muted">You cannot achieve greatness or fulfill your true life purpose without suffering.</em>
 					<ul class="list-unstyled">
-						{% for post in site.tags.progress limit: 5 %}
-							<li class="text-muted">{{ post.date | date_to_string }}&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-						{% endfor %}
+						
 					</ul>
 				</div>
 			</div>  
 
+
+            </div>
+            <hr>
+            <div id="footer">
+                <div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<p class="text-muted">&copy;2014 Wonderfulife      </p>
+						</div>
+						<div class="col-md-6">
+							<p class="text-muted text-right">Powered by GitHub</a></p>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </body>
+</html>
